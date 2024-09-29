@@ -4,6 +4,7 @@
   --nav_green: #009a3b;
   --nav_hover: rgb(90, 139, 89);
   --session_green: rgba(216, 227, 152, .4);
+  --btn-success: #22ac46;
 }
 
 /* General Styles */
@@ -13,13 +14,17 @@
   padding: 0;
 }
 
+.btn-success {
+  background-color: var(--btn-success);
+  border: none;
+}
+
 /* Google fonts */
 .gowun-batang-regular {
   font-family: "Gowun Batang", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 
 body {
   background-color: #fff;
@@ -71,8 +76,8 @@ header .btn-success {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   object-fit: cover; /* Ensures the image covers the entire container */
+  max-height: 600px;
 }
 
 /* Card Positioning */
@@ -89,18 +94,55 @@ header .btn-success {
   color: #607D8B;
 }
 
+.img-design {
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  padding: 15px; 
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+
 .cooking-demo {
   color: var(--nav_green);
 }
 
-
-h1, h2{
+h1, h2, h3{
     color: var(--nav_green);
 } */
 
-.first-img  {
+.left-img  {
   border-radius: 90px 0px 90px 0px;
 }
+
+.d-flex {
+  display: flex !important;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.buy_thermomix {
+  position: relative;
+}
+
+.buy_thermomix img {
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  max-height: 600px;
+}
+
+.buy_thermomix-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 
 /* Left Background Colors */
 /* .left-bg-color {

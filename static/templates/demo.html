@@ -15,7 +15,9 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Alina's TM6</a>
+                <a class="navbar-brand" href="#">
+                    <img src="/static/img/logo.png" alt="">
+                  </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -49,67 +51,92 @@
             </div>
         </div>
     </header>
-    <section>
-        <div class="card card-book-demo mx-auto text-center">
-            <h1 class="card-title m-3 gowun-batang-regular">Book a Demo</h1>
-            <div class="card-body">
-                    <div class="row">
-                    <div class="col-md-6 d-flex">
-                        <p>
-                            <em>Having a <b>Thermomix® Advisor</b> means you’re not just buying a kitchen appliance; you’re
-                                gaining
-                                a
-                                dedicated
-                                support partner.</em>
-                        <p>I’ll assist you from the moment you purchase your TM6, guiding you on how to use it
-                            effectively, helping you navigate the <a href="https://cookidoo.co.uk/foundation/en-GB"
-                                class="cooking-demo" target="_blank">Cookidoo Recipe Platform</a>, and inviting you to
-                            exclusive
-                            cooking
-                            classes.
-                        </p>
-                        <p>Whether you need recipe tips or ongoing advice, I'm here to ensure you make the most of your
-                            investment and enjoy a rewarding culinary journey! <br><br>
-
-                            Join me,<em class="cooking-demo">Your Thermomix Advisor</em> for a cooking demo</span> and
-                            discover how
-                            the
-                            Thermomix can transform your cooking experience today!</p>
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="/static/img/buy_tm6.jpeg" class="card-img-top img-design" alt="card image">
-                    </div>
-
-                    <!-- Book a demo Form -->
-                    <form action="book_demo">
+    <div class="main-container">
+        <section class="book-demo">
+            <div class="card card-book-demo mx-auto text-center">
+                <h1 class="card-title m-3 gowun-batang-regular">Book a Demo</h1>
+                <div class="card-body">
                         <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                            </div>
-                            <div class="form-group col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
-                                    placeholder="Leave a message..."></textarea>
-                            </div>
-                            <div>
-                                <button type="submit" class="btn btn-success">Submit</button>
-                            </div>
+                        <div class="col-md-6 d-flex">
+                            <p>
+                                <em>Having a <b>Thermomix® Advisor</b> means you’re not just buying a kitchen appliance; you’re
+                                    gaining
+                                    a
+                                    dedicated
+                                    support partner.</em>
+                            <p>I’ll assist you from the moment you purchase your TM6, guiding you on how to use it
+                                effectively, helping you navigate the <a href="https://cookidoo.co.uk/foundation/en-GB"
+                                    class="cooking-demo" target="_blank">Cookidoo Recipe Platform</a>, and inviting you to
+                                exclusive
+                                cooking
+                                classes.
+                            </p>
+                            <p>Whether you need recipe tips or ongoing advice, I'm here to ensure you make the most of your
+                                investment and enjoy a rewarding culinary journey! <br><br>
+
+                                Join me,<em class="cooking-demo">Your Thermomix Advisor</em> for a cooking demo</span> and
+                                discover how
+                                the
+                                Thermomix can transform your cooking experience today!</p>
+                            </p>
                         </div>
-                    </form>
+                        <div class="col-md-6">
+                            <img src="/static/img/buy_tm6.jpeg" class="card-img-top img-design" alt="card image">
+                        </div>
+
+                        <!-- Book a demo Form -->
+                        <form action="book_demo">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                </div>
+                                <div class="form-group col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                                        placeholder="Leave a message..."></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="how_it_works text-center">
-        <h2>How it Works</h2>
-    </section>
+        </section>
+        <!-- Section how it works -->
+        <section class="how_it_works text-center">
+            <h2 class="m-3">How it Works</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Schedule a Cooking Demo</h4>
+                    <span class="circle m-3">1</span>
+                    <p>
+                        Begin your Thermomix® journey by scheduling a one-on-one cooking demonstration with me. The experience is tailored to your unique cooking habits and preferences. When you request a demo, you can share how many people you typically cook for, the types of meals you enjoy preparing, and any specific features you’re eager to see in action. I will send you a menu in advance, so you can select the recipes that best align with your tastes, ensuring the demo is personalized just for you.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Discover it in Action</h4>
+                    <span class="circle m-3">2</span>
+                    <p>
+                        During your personalized cooking demo, experience firsthand how versatile the Thermomix® is. You’ll see how effortlessly it chops, blends, kneads, and cooks, showcasing its full range of features. Try out different functions, I will also help you prepare dishes such as risotto, soups, bread, and more. Have questions? Feel free to ask! It’s your time to learn and understand how the Thermomix® can fit into your everyday kitchen routine.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Decide at Your Own Pace</h4>
+                    <span class="circle m-3">3</span>
+                    <p>
+                        After the demo, if you're impressed with what the Thermomix® has to offer, I will guide you through the ordering process, detailing all the available payment options. Whether you choose to purchase right away or need time to think it over, I will remain available to answer any additional questions. You can even schedule another demo to see more features in action before making a final decision. It's all about ensuring that you make the best choice for your kitchen!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Footer -->
   <footer class="tex-white mx-auto text-center py-4">

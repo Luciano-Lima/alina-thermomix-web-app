@@ -34,6 +34,11 @@ body {
   color: #607D8B;
 }
 
+.main-container {
+  max-width: 1320px;
+  margin: auto;
+}
+
 header .btn-success {
   border-radius: 0px;
 }
@@ -155,6 +160,8 @@ h1, h2, h3{
   width: 100%;
   overflow: hidden;
   max-height: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .buy_thermomix-btn {
@@ -221,6 +228,21 @@ footer a:hover {
 
 .form-control::placeholder {
   opacity: .6;
+}
+
+.how_it_works {
+  margin-top: -80px;
+}
+
+.circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--nav_green);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
 }
 
 

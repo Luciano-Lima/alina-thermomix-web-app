@@ -230,16 +230,6 @@ footer a:hover {
   margin-top: -80px;
 }
 
-.circle {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--nav_green);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-}
 
 /* Section buy_thermomix */
 .after-sale-suport {

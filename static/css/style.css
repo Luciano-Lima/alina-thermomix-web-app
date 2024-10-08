@@ -5,6 +5,7 @@
   --nav_hover: rgb(90, 139, 89);
   --session_green: rgba(216, 227, 152, .4);
   --btn-success: #22ac46;
+  --bg-colour: #f8f9fa;
 }
 
 /* General Styles */
@@ -43,38 +44,43 @@ header .btn-success {
   border-radius: 0px;
 }
 
- /* Navbar  */
+/* Navbar  */
 .navbar {
   border-top: 8px solid var(--nav_green);
 }
 
-  .navbar-brand, .nav-link, .nav-link:hover {
-    color: var(--nav_green);
-  }
+.navbar-brand,
+.nav-link,
+.nav-link:hover {
+  color: var(--nav_green);
+}
 
-  .navbar-brand img {
-      max-height: 55px; 
-      height: auto;     /* Maintain aspect ratio */
-      width: auto;      /* Optional to prevent width distortion */
-    }
-  
-  .navbar-nav .nav-link.active {
-    color: rgb(37 129 70);
-    font-weight: 600;
-  } 
+.navbar-brand img {
+  max-height: 55px;
+  height: auto;
+  /* Maintain aspect ratio */
+  width: auto;
+  /* Optional to prevent width distortion */
+}
 
-  .navbar-brand:hover {
-    color: var(--nav_hover);
-  }
+.navbar-nav .nav-link.active {
+  color: rgb(37 129 70);
+  font-weight: 600;
+}
 
-  .nav-link:hover {
-    color: var(--nav_hover);
-  }
+.navbar-brand:hover {
+  color: var(--nav_hover);
+}
+
+.nav-link:hover {
+  color: var(--nav_hover);
+}
 
 /* Hero Container */
 .hero-container {
   position: relative;
-  height: 100vh; /* Set to 100vh for full height */
+  height: 100vh;
+  /* Set to 100vh for full height */
   overflow: hidden;
 }
 
@@ -82,7 +88,8 @@ header .btn-success {
 .hero {
   position: absolute;
   width: 100vw;
-  padding-bottom: 36.25%; /*  16:9 Aspect Ratio (9/16 = 0.5625 * 100)  */
+  padding-bottom: 36.25%;
+  /*  16:9 Aspect Ratio (9/16 = 0.5625 * 100)  */
   height: 100vh;
 }
 
@@ -108,23 +115,8 @@ header .btn-success {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Card Positioning */
-/* .card {
-  position: absolute;
-  top: 60%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  width: 25vw;
-  max-width: 400px;
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.9); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  padding: 15px; 
-  color: #607D8B;
-} */
-
 .img-design {
-  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 4px 5px 20px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   max-width: 600px;
@@ -136,8 +128,10 @@ header .btn-success {
   text-decoration: none;
 }
 
-h1, h2, h3{
-    color: var(--nav_green);
+h1,
+h2,
+h3 {
+  color: var(--nav_green);
 }
 
 .d-flex {
@@ -151,7 +145,7 @@ h1, h2, h3{
 }
 
 /* position the btns in the center of the image */
-.buy_thermomix-img { 
+.buy_thermomix-img {
   position: relative;
 }
 
@@ -205,7 +199,9 @@ footer a:hover {
   padding: 2%;
 }
 
-.container, .row, .col {
+.container,
+.row,
+.col {
   max-width: 100%;
   padding: 15px;
   margin: 0 auto;
@@ -219,10 +215,10 @@ footer a:hover {
 .card-book-demo {
   max-width: 80vw;
   top: -150px;
-  border-radius: 50px;
+  border-radius: 50px 50px 5px 5px;
   text-wrap: balance;
   border: 0;
-  background: #f8f9fa;
+  background: var(--bg-colour);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -245,51 +241,20 @@ footer a:hover {
   color: #fff;
 }
 
+/* Section buy_thermomix */
+.after-sale-suport {
+  background-color: var(--bg-colour);
+}
 
-/* Left Background Colors */
-/* .left-bg-color {
-    padding: 20px; 
-  } */
-  
-  /* Full Height for Flexbox Layout */
-  /* .full-height {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 5px;
-    justify-content: center;
-  } */
-/*   
-  .full-height img {
-    border-radius: 5px;
-  } */
+.bg-colour {
+  background-color: var(--bg-colour);
+}
 
-  /* Navbar links  */
-  /* .navbar-brand, .nav-link, .nav-link:hover {
-    color: var(--nav_green);
-  } */
-
-  /* .navbar-nav .nav-link.active {
-    color: rgb(37 129 70);
-    font-weight: 600;
-  } */
-
-  /* .navbar-brand:hover {
-    color: var(--nav_hover);
-  } */
-
-  /* .nav-link:hover {
-    color: var(--nav_hover);
-  } */
-
-/* Session Videos */
-  /* .videos {
-    background-color: var(--session_green);
-    
-  } */
-
-  @media (max-width: 768px) {
-    .card {
-      width: 80vw; /* Wider on smaller screens */
-      top: -40vw /* Adjust top position */
-    }
+@media (max-width: 768px) {
+  .card {
+    width: 80vw;
+    /* Wider on smaller screens */
+    top: -40vw
+      /* Adjust top position */
   }
+}

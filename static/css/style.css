@@ -48,6 +48,11 @@ header .btn-success {
   border-radius: 0px;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Navbar  */
 .navbar {
   border-top: 8px solid var(--nav_green);

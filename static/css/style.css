@@ -305,3 +305,9 @@ footer a:hover {
     margin-top: -15px;
   }
 }
+
+@media (max-width: 576px) {
+  #thermomixButtons {
+    display: none;
+  }
+ }

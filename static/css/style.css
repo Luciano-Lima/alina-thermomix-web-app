@@ -188,10 +188,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.footer-links {
-  margin-top: 1.5rem
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -296,9 +292,8 @@ footer a:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .card {
-    /* width: 80vw; */
-    /* Wider on smaller screens */
+  .contact {
+    margin-bottom: -120px ;
   }
   .card-body {
     margin-top: -15px;

@@ -4,7 +4,6 @@
   --nav_green: #009a3b;
   --nav_hover: rgb(90, 139, 89);
   --session_green: rgba(216, 227, 152, .4);
-  --btn-success: #22ac46;
   --bg-colour: #f8f9fa;
 }
 
@@ -19,9 +18,9 @@ section {
   padding: 0 0 20px ;
 }
 
-.btn-success {
-  background-color: var(--btn-success);
-  border: none;
+button a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Google fonts */

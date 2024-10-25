@@ -44,12 +44,20 @@ const debounce = (func, delay = 20) => {
 document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', debounce(handleScrollAnimation))
     handleScrollAnimation()  // Ensure animations trigger on page load in case any elements are already in view
+    const readMoreBtn =  document.querySelector('.read-more')
+    const toggleContent = document.querySelector('.toggle-content')
+
+    if(readMoreBtn && toggleContent ){
+        readMoreBtn.addEventListener('click', loadContent)
+    }
 })
 
 // Show / Hide button when video plays
 
 const video = document.getElementById('thermomixVideo')
 const buttonsContainer = document.getElementById('thermomixButtons')
+
+
 
 video.addEventListener('play', () => {
     buttonsContainer.style.display = 'none'
@@ -62,3 +70,11 @@ video.addEventListener('pause', () => {
 video.addEventListener('ended', () => {
     buttonsContainer.style.display = 'inline-flex'
 })
+
+
+function loadContent() {
+    const toggleContent = document.querySelector('.toggle-content')
+    toggleContent.classList.toggle('show-content')
+    console.log('clicked');
+    console.log(toggleContent);
+}

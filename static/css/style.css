@@ -7,6 +7,7 @@
   --bg-colour: #f8f9fa;
 }
 
+
 /* General Styles */
 * {
   box-sizing: border-box;
@@ -244,6 +245,20 @@ footer a:hover {
 .bg-colour {
   background-color: var(--bg-colour);
   margin-bottom: 2rem;
+}
+
+.toggle-content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show-content {
+  height: auto;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* key frame Animation */

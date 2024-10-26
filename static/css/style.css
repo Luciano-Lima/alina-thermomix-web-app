@@ -195,7 +195,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
+/* Min-Height for video about me page */
 .min-Height {
   min-height: 440px;
 }
@@ -325,6 +325,11 @@ footer a:hover {
   #thermomixButtons {
     display: none;
   }
+
+  /* Min-Height for video about me page */
+.min-Height {
+  min-height: 250px;
+}
 
   @keyframes slide-in-left {
     0% {

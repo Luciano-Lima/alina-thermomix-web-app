@@ -263,11 +263,11 @@ footer a:hover {
   transform: translateY(0);
 }
 
-.modal {
+/* .modal {
   overflow-y: scroll;
   height: 100%;
   width: 100%;
-}
+} */
 
 .modal-header h1 {
   padding-left: 10vw;

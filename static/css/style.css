@@ -120,12 +120,16 @@ video {
   padding: 1.2rem;
 }
 
+.img-fluid {
+  width: 500px;
+}
+
 .img-design {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 4px 5px 20px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  max-width: 600px;
+  border-radius: 10px;
 }
+
 
 
 .cooking-demo {
@@ -191,9 +195,9 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+
+.min-Height {
+  min-height: 440px;
 }
 
 .container {

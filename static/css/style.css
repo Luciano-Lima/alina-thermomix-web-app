@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gowun+Batang:wght@400;700&display=swap');
 
 :root {
-  --nav_green: #009a3b;
+  --nav_green: #005c23 ;
   --nav_hover: rgb(90, 139, 89);
   --session_green: rgba(216, 227, 152, .4);
   --bg-colour: #f8f9fa;
@@ -36,7 +36,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   font-family: SourceSansRegular, Arial, Verdana, Geneva, Tahoma, sans-serif;
-  color: #607D8B;
+  color: #455E63;
 }
 
 .main-container {
@@ -124,6 +124,11 @@ video {
   width: 500px;
 }
 
+.img-meet-your-advisor {
+  height: 400px;
+  object-fit: contain;
+}
+
 .img-design {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 4px 5px 20px 4px rgba(0, 0, 0, 0.2);
@@ -195,7 +200,7 @@ footer a:hover {
 
 /* Min-Height for video about me page */
 .min-Height {
-  min-height: 440px;
+  min-height: 420px;
 }
 
 .container {
@@ -216,9 +221,9 @@ footer a:hover {
   color: var(--nav_green);
 }
 
-.card-body {
-  color: #607D8B;
-}
+/* .card-body {
+  color: #455E63;
+} */
 
 .card-top {
 
@@ -231,7 +236,7 @@ footer a:hover {
 }
 
 .form-control::placeholder {
-  opacity: .6;
+  color: #a1a1a1;
 }
 
 .how_it_works {

@@ -9,7 +9,6 @@ const elementInView = (el, offset = 0) => {
     );
 };
 
-
 const displayScrollElement = (element) => {
     element.classList.add('scrolled');
 }
@@ -58,7 +57,6 @@ const video = document.getElementById('thermomixVideo')
 const buttonsContainer = document.getElementById('thermomixButtons')
 
 
-
 video.addEventListener('play', () => {
     buttonsContainer.style.display = 'none'
 })
@@ -75,6 +73,6 @@ video.addEventListener('ended', () => {
 function loadContent() {
     const toggleContent = document.querySelector('.toggle-content')
     toggleContent.classList.toggle('show-content')
-    console.log('clicked');
-    console.log(toggleContent);
+    this.innerText = toggleContent.classList.contains('show-content') ? 'Aproape' : 'Citeşte Mai Mult';
+
 }

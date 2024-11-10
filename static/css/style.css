@@ -310,7 +310,7 @@ footer a:hover {
 
 .scrolled {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) translateZ(0);
   /* Reset position */
 }
 

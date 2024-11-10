@@ -65,9 +65,7 @@ video {
 .navbar-brand img {
   max-height: 55px;
   height: auto;
-  /* Maintain aspect ratio */
   width: auto;
-  /* Optional to prevent width distortion */
 }
 
 .navbar-nav .nav-link.active {
@@ -228,7 +226,6 @@ footer a:hover {
 
   bottom: 15vh;
   border-radius: 50px 50px 5px 5px;
-  /* text-wrap: balance; */
   border: 0;
   background: var(--bg-colour);
   box-shadow: 0px 0px 1px 2px rgba(20, 20, 20, -0.8);
@@ -267,11 +264,11 @@ footer a:hover {
   transform: translateY(0);
 }
 
-/* .modal {
+.modal {
   overflow-y: scroll;
   height: 100%;
   width: 100%;
-} */
+}
 
 .modal-header h1 {
   padding-left: 10vw;
@@ -303,14 +300,14 @@ footer a:hover {
 .js-scroll {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.1s ease-out;
   /* Smooth fade and slide */
 }
 
 
 .scrolled {
   opacity: 1;
-  transform: translateY(0) translateZ(0);
+  transform: translateY(0);
   /* Reset position */
 }
 
@@ -381,28 +378,4 @@ footer a:hover {
   .min-Height {
     min-height: 250px;
   }
-
-  /* @keyframes slide-in-left {
-    0% {
-      transform: translate(-30px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translate(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide-in-right {
-    0% {
-      transform: translate(30px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translate(0);
-      opacity: 1;
-    }
-  } */
 }

@@ -138,6 +138,8 @@ video {
 .cooking-demo {
   color: var(--nav_green);
   text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
 }
 
 h1,

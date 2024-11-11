@@ -94,7 +94,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     })
         .then(response => {
             if (response.ok) {
-                window.location.href = 'index.html';
+                window.location.href = 'contact.html';
                 form.reset(); // Clear the form
             } else {
                 console.error('Form submission failed:', response.status, response.statusText);

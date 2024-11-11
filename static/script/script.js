@@ -87,7 +87,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     const form = event.target;
     const formData = new FormData(form);
 
-    fetch(form.action, {
+    fetch('https://formspree.io/f/xrbgkeoe', {
         method: 'POST',
         body: formData,
         headers: { 'Accept': 'application/json' }

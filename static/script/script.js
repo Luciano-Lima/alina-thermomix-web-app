@@ -81,29 +81,38 @@ function loadContent() {
 
 // Formspree to handle redicted after form submition
 
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the default form submission
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Prevent the default form submission
+    
+//     const form = event.target;
+//     const formData = new FormData(form);
 
-    const form = event.target;
-    const formData = new FormData(form);
+//     // Send the form data to Formspree using fetch
+//     fetch(form.action, {
+//         method: 'POST',
+//         body: formData,
+//         headers: { 'Accept': 'application/json' }
+//     })
+//     .then(response => {
+//         if (response.ok) {
+//             console.log('Form submitted successfully!');
+//             window.location.href = '/index.html'; // Redirect to the homepage
+//         } else {
+//             console.error('Form submission failed:', response.status, response.statusText);
+//             alert('Oops! There was a problem submitting your form.');
+//         }
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//         alert('Oops! There was a problem submitting your form.');
+//     });
+// });
 
-    fetch('https://formspree.io/f/xrbgkeoe', {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-    })
-        .then(response => {
-            if (response.ok) {
-                window.location.href = 'contact.html';
-                form.reset(); // Clear the form
-            } else {
-                console.error('Form submission failed:', response.status, response.statusText);
-            alert('Oops! There was a problem submitting your form.');
-            }
-        })
-        .catch(error => {
-            alert('Oops! There was a problem submitting your form.');
-            console.error('Error:', error);
-        });
-});
 
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Prevent the default form submission
+
+//     // Simulate a form submission success and trigger the redirect
+//     console.log('Form submitted successfully!');
+//     window.location.href = '/index.html'; // Attempt the redirect
+// });

@@ -106,25 +106,30 @@
                         </div>
 
                         <!-- Book a demo Form -->
-                        <form action="book_demo" class="mt-5">
+                        <form id="contact-form" class="mt-5" name="contact-form" action="/thank-you.html" method="POST"
+                            data-netlify=true>
                             <div class="row">
-                                <div class="form-group col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="First name"
-                                        aria-label="First name">
+                                <div class="form-group col-md-6 col-sm-12 mb-3">
+                                    <input type="text" class="form-control" name="first-name" placeholder="First Name"
+                                        aria-label="First Name" required>
                                 </div>
                                 <div class="form-group col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Last name"
-                                        aria-label="Last name">
+                                    <input type="text" class="form-control" name="last-name" placeholder="Last Name"
+                                        aria-label="Last Name" required>
+                                </div>
+                                <div class="form-group col-md-6 mb-3">
+                                    <input type="text" class="form-control" name="phone-number" id="phoneNumber"
+                                        aria-label="phoneNumber" placeholder="Contact Number" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" name="email" id="formControlInput"
+                                        placeholder="Email" aria-label="email" required>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Email" aria-label="e-mail">
+                                    <textarea class="form-control" name="message" id="formControlTextarea" rows="5"
+                                        placeholder="Leave a message..." aria-label="textarea" required></textarea>
                                 </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
-                                        placeholder="Leave a message..." aria-label="textarea"></textarea>
-                                </div>
-                                <div class="text-center">
+                                <div>
                                     <button type="submit" class="btn btn-success">Submit</button>
                                 </div>
                             </div>

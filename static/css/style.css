@@ -97,6 +97,11 @@ video {
   overflow: hidden;
 }
 
+.navbar-collapse {
+  margin-top: 1.4rem;
+  
+}
+
 /* Hero */
 .hero {
   position: relative;
@@ -482,6 +487,16 @@ h3 {
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 992px) {
+  .navbar ul li a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .contact {
     margin-bottom: -120px;
@@ -499,10 +514,6 @@ h3 {
     max-width: 80vw;
     min-height: 275px;
     height: auto;
-  }
-
-  .navbar ul li a {
-    color: white;
   }
 }
 

@@ -502,6 +502,10 @@ p {
     display: none;
   }
 
+  #tm7-features {
+    max-width: 100%;
+  }
+
   /* Min-Height for video about me page */
   .min-Height {
     min-height: 250px;

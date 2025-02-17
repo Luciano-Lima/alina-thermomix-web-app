@@ -76,3 +76,15 @@ function loadContent() {
     this.innerText = toggleContent.classList.contains('show-content') ? 'Aproape' : 'Citeşte Mai Mult';
 
 }
+
+//pop up tm7
+document.addEventListener("DOMContentLoaded", function() {
+    if (!sessionStorage.getItem("popupClosed")) {
+        document.getElementById("popup").style.display = "flex";
+    }
+});
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    sessionStorage.setItem("popupClosed", "true");
+}

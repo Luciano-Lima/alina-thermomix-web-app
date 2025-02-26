@@ -73,18 +73,25 @@ video.addEventListener('ended', () => {
 function loadContent() {
     const toggleContent = document.querySelector('.toggle-content')
     toggleContent.classList.toggle('show-content')
-    this.innerText = toggleContent.classList.contains('show-content') ? 'Aproape' : 'Citeşte Mai Mult';
+    this.innerText = toggleContent.classList.contains('show-content') ? 'Inchide' : 'Citeşte Mai Mult';
 
 }
 
-//pop up tm7
+// pop up tm7
 document.addEventListener("DOMContentLoaded", function () {
-    if (!sessionStorage.getItem("popupClosed")) {
-        document.getElementById("popup").style.display = "flex";
-    }
-});
+    const popup = document.getElementById("popup");
+    const closeButton = document.querySelector(".popup-close");
 
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-    sessionStorage.setItem("popupClosed", "true");
-}
+    // Check sessionStorage and hide popup if already closed
+    if (sessionStorage.getItem("popupClosed") === "true") {
+        popup.style.display = "none"; 
+    } else {
+        popup.style.display = "flex"; 
+    }
+
+    // Add close event listener
+    closeButton.addEventListener("click", function () {
+        popup.style.display = "none";
+        sessionStorage.setItem("popupClosed", "true");
+    });
+});

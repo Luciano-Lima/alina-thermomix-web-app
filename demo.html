@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alina Thermomix - Book a Interactive Thermomix Cooking Demo</title>
-  <meta name="description" content="Experience the Thermomix in action with our interactive demo. See how Alina guides you through recipes step-by-step.">
+  <meta name="description"
+    content="Experience the Thermomix in action with our interactive demo. See how Alina guides you through recipes step-by-step.">
   <meta name="keywords" content="Thermomix demo, cooking demo, recipe demo, interactive Thermomix guide">
   <meta property="og:title" content="Alina Thermomix - Interactive Demo">
   <meta property="og:description" content="Try our interactive demo and see how easy it is to cook with Thermomix!">
@@ -60,7 +61,7 @@
       </div>
       <div class="d-flex text-center hero-heading">
         <span>You Can Choose a Virtual or Face-to-Face - <br> Thermomix® Demo </span>
-        <a class="btn btn-success" href="demo.html">Book a Demo</a>
+        <a class="btn btn-success" href="#book-demo">Get Yours Today</a>
       </div>
     </div>
   </header>
@@ -95,28 +96,37 @@
             </div>
 
             <!-- Book a demo Form -->
-            <form id="contact-form" class="mt-5" name="contact-form" action="/thank-you.html" method="POST" data-netlify=true >
-              <div class="row">
-                <div class="form-group col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" name="first-name" placeholder="First Name" aria-label="First Name" required>
+            <section id="book-demo">
+              <form id="contact-form" class="mt-5" name="contact-form" action="/thank-you.html" method="POST"
+                data-netlify=true>
+                <div class="row">
+                  <div class="form-group col-md-6 col-sm-12 mb-3">
+                    <input type="text" class="form-control" name="first-name" placeholder="First Name"
+                      aria-label="First Name" required>
+                  </div>
+                  <div class="form-group col-md-6 mb-3">
+                    <input type="text" class="form-control" name="last-name" placeholder="Last Name"
+                      aria-label="Last Name" required>
+                  </div>
+                  <div class="form-group col-md-6 mb-3">
+                    <input type="text" class="form-control" name="phone-number" id="phoneNumber"
+                      aria-label="phoneNumber" placeholder="Contact Number" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" name="email" id="formControlInput" placeholder="Email"
+                      aria-label="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control" name="message" id="formControlTextarea" rows="5"
+                      placeholder="Leave a message..." aria-label="textarea" required></textarea>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                  </div>
                 </div>
-                <div class="form-group col-md-6 mb-3">
-                  <input type="text" class="form-control" name="last-name" placeholder="Last Name" aria-label="Last Name" required>
-                </div>
-                <div class="form-group col-md-6 mb-3">
-                  <input type="text" class="form-control" name="phone-number" id="phoneNumber" aria-label="phoneNumber" placeholder="Contact Number" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <input type="email" class="form-control" name="email" id="formControlInput" placeholder="Email" aria-label="email" required>
-                </div>
-                <div class="mb-3">
-                  <textarea class="form-control" name="message" id="formControlTextarea" rows="5" placeholder="Leave a message..." aria-label="textarea" required></textarea>
-                </div>
-                <div>
-                  <button type="submit" class="btn btn-success">Submit</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </section>
+
           </div>
         </div>
       </div>
@@ -205,9 +215,9 @@
                       <li>Aprofundeazã cunoasterea produsului cu un consultant experimentat și pasionat care te va
                         sprijini pe tot parcursul drumului tau si al folosirii aparatului, indiferent de cate ori
                         doresti sa intrebi ce trebuie sa stii in a fi comod cu Termomixul tau!</li>
-                      </ul>
-                    </div>
+                    </ul>
                   </div>
+                </div>
                 <div class="col-md-6 js-scroll slide-right">
                   <img src="static/img/buy-tm6.jpg" class="img-design img-fluid" alt="get yours thermomix tm6">
                 </div>
@@ -292,7 +302,7 @@
       <a href="demo.html">Book a Demo</a> |
       <a href="buy_thermomix.html">Buy Thermomix</a> |
       <a href="about_me.html">About Me</a> |
-      <a href="contact.html">Contact</a> 
+      <a href="contact.html">Contact</a>
     </div>
     <p>&copy; 2024 Alina's Thermomix Advisor - All rights reserved.</p>
   </footer>

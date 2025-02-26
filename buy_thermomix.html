@@ -65,7 +65,7 @@
             </div>
             <div class="d-flex text-center hero-heading">
                 <span>I'll guide you through every step of your Thermomix® - <br> Purchase </span>
-                <a class="btn btn-success" href="demo.html">Book a Demo</a>
+                <a class="btn btn-success" href="#book-demo">Get Yours Today</a>
             </div>
         </div>
     </header>
@@ -106,34 +106,36 @@
                         </div>
 
                         <!-- Book a demo Form -->
-                        <form id="contact-form" class="mt-5" name="contact-form" action="/thank-you.html" method="POST"
-                            data-netlify=true>
-                            <div class="row">
-                                <div class="form-group col-md-6 col-sm-12 mb-3">
-                                    <input type="text" class="form-control" name="first-name" placeholder="First Name"
-                                        aria-label="First Name" required>
+                        <section id="book-demo">
+                            <form id="contact-form" class="mt-5" name="contact-form" action="/thank-you.html"
+                                method="POST" data-netlify=true>
+                                <div class="row">
+                                    <div class="form-group col-md-6 col-sm-12 mb-3">
+                                        <input type="text" class="form-control" name="first-name"
+                                            placeholder="First Name" aria-label="First Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <input type="text" class="form-control" name="last-name" placeholder="Last Name"
+                                            aria-label="Last Name" required>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <input type="text" class="form-control" name="phone-number" id="phoneNumber"
+                                            aria-label="phoneNumber" placeholder="Contact Number" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" class="form-control" name="email" id="formControlInput"
+                                            placeholder="Email" aria-label="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" name="message" id="formControlTextarea" rows="5"
+                                            placeholder="Leave a message..." aria-label="textarea" required></textarea>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                    </div>
                                 </div>
-                                <div class="form-group col-md-6 mb-3">
-                                    <input type="text" class="form-control" name="last-name" placeholder="Last Name"
-                                        aria-label="Last Name" required>
-                                </div>
-                                <div class="form-group col-md-6 mb-3">
-                                    <input type="text" class="form-control" name="phone-number" id="phoneNumber"
-                                        aria-label="phoneNumber" placeholder="Contact Number" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" name="email" id="formControlInput"
-                                        placeholder="Email" aria-label="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" name="message" id="formControlTextarea" rows="5"
-                                        placeholder="Leave a message..." aria-label="textarea" required></textarea>
-                                </div>
-                                <div>
-                                    <button type="submit" class="btn btn-success">Submit</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </section>
                     </div>
                 </div>
             </div>

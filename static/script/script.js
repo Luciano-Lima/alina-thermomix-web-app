@@ -78,7 +78,7 @@ function loadContent() {
 }
 
 //pop up tm7
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     if (!sessionStorage.getItem("popupClosed")) {
         document.getElementById("popup").style.display = "flex";
     }

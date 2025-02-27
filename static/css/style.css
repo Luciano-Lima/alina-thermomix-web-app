@@ -154,6 +154,7 @@ video {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   padding: 1.2rem;
+  z-index: 10;
 }
 
 .img-fluid {
@@ -492,6 +493,10 @@ h3 {
   .navbar ul li a {
     color: #ffffff;
     font-weight: 600;
+  }
+
+  .hero-heading {
+    min-width: 80vw;
   }
 }
 

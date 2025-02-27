@@ -361,11 +361,6 @@ footer a:hover {
   height: auto;
 }
 
-.popup-content img {
-  /* width: 100%; */
-  /* object-fit: fit; */
-}
-
 /* CTA Button */
 .popup-cta {
   display: block;
@@ -520,22 +515,19 @@ h3 {
   }
 }
 
-@media only screen 
-  and (min-width: 375px)
-  and (max-width: 667) 
-  and (orientation: landscape)
-  {
+@media screen and (orientation: landscape) {
   .popup-content {
     width: fit-content;
-    height: 98vh;
+    /* height: 90vh; */
   }
 
   .popup-content img {
-    height: 80vh;
+    height: 78vh;
   }
 
   .popup-cta {
     width: 65%;
+    /* margin: 1px auto; */
   }
 }
 

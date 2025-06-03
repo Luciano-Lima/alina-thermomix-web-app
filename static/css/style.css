@@ -44,11 +44,23 @@ body {
 }
 
 #disclaimerBanner {
+  display: none;
   background-color: #f8f8f8;
   padding: 10px;
   text-align: center;
-  border-bottom: 1px solid #ccc
+  border-bottom: 1px solid #ccc;
+  font-family: 'Gowun Batang','Courier New', Courier, monospace;
+
 }
+
+#disclaimerBanner.show {
+  display: block;
+}
+
+#disclaimerFooter {
+  font-family: 'Gowun Batang','Courier New', Courier, monospace;
+}
+
 
 .index-page .modal-backdrop {
   z-index: 0 !important;

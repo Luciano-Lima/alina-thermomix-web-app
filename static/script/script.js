@@ -100,18 +100,20 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', () => {
     const disclaimerBtn = document.getElementById('disclaimerButton');
     const disclaimerBanner = document.getElementById('disclaimerBanner');
-
+  
     if (disclaimerBtn && disclaimerBanner) {
-        if (localStorage.getItem('disclaimerClosed') !== 'true') {
-            disclaimerBanner.style.display = 'block';
-        }
-
-        disclaimerBtn.addEventListener('click', () => {
-            disclaimerBanner.style.display = 'none';
-            localStorage.setItem('disclaimerClosed', 'true');
-        });
+      // Only show once per session
+      if (sessionStorage.getItem('disclaimerClosed') !== 'true') {
+        disclaimerBanner.classList.add('show')
+      }
+  
+      disclaimerBtn.addEventListener('click', () => {
+        disclaimerBanner.classList.remove('show')
+        sessionStorage.setItem('disclaimerClosed', 'true'); // only for the current tab
+      });
     }
-});
+  });
+  
 
 
 

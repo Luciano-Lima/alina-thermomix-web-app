@@ -95,3 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
         sessionStorage.setItem("popupClosed", "true");
     });
 });
+
+//Disclaimer
+const disclaimerBtn = document.getElementById('disclaimerButton')
+const disclaimerBanner = document.getElementById('disclaimerBanner')
+
+disclaimerBtn.addEventListener('click', () => {
+    disclaimerBanner.style.display= 'none'
+})
+

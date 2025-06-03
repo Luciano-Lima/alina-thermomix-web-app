@@ -29,7 +29,6 @@ const handleScrollAnimation = () => {
 }
 
 //Add a Debunce to the scroll envent to improve performance
-
 const debounce = (func, delay = 20) => {
     let timer;
     return () => {
@@ -40,6 +39,7 @@ const debounce = (func, delay = 20) => {
     }
 }
 
+// DOM Content Loaded: Combine all scripts in a single listener
 document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', debounce(handleScrollAnimation))
     handleScrollAnimation()  // Ensure animations trigger on page load in case any elements are already in view
@@ -97,10 +97,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Disclaimer
-const disclaimerBtn = document.getElementById('disclaimerButton')
-const disclaimerBanner = document.getElementById('disclaimerBanner')
+document.addEventListener('DOMContentLoaded', () => {
+    const disclaimerBtn = document.getElementById('disclaimerButton');
+    const disclaimerBanner = document.getElementById('disclaimerBanner');
 
-disclaimerBtn.addEventListener('click', () => {
-    disclaimerBanner.style.display= 'none'
-})
+    if (disclaimerBtn && disclaimerBanner) {
+        if (localStorage.getItem('disclaimerClosed') !== 'true') {
+            disclaimerBanner.style.display = 'block';
+        }
+
+        disclaimerBtn.addEventListener('click', () => {
+            disclaimerBanner.style.display = 'none';
+            localStorage.setItem('disclaimerClosed', 'true');
+        });
+    }
+});
+
+
 

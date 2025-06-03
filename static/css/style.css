@@ -28,6 +28,11 @@ button a {
   color: white;
 }
 
+.equal-width-btn {
+  width: 165px;
+  text-align: center;
+}
+
 /* Google fonts */
 .gowun-batang-regular {
   font-family: "Gowun Batang", serif;

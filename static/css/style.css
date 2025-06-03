@@ -43,6 +43,13 @@ body {
   color: #455E63;
 }
 
+#disclaimerBanner {
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc
+}
+
 .index-page .modal-backdrop {
   z-index: 0 !important;
 }
